@@ -1,0 +1,15 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model RocketTeamMember {
+     id String @id
+    name String 
+    function String
+}
